@@ -1286,8 +1286,16 @@ main {
 
 .footer__right {
   position: absolute;
-  right: 30px;
+
+  right: 60px;
   list-style: none;
+}
+
+.footer__map {
+  position: absolute;
+  right: 220px;
+  width: 400px;
+  height: 250px;
 }
 
 .icon {
@@ -1359,6 +1367,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .footer__li {
     margin-left: 0;
     margin-right: 30px;
+  }
+
+  .footer__map {
+    position: absolute;
   }
 }
 

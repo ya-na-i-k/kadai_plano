@@ -287,9 +287,16 @@ main {
   
   &__right {
     position: absolute;
-    right: 30px;
+
+    right: 60px;
     list-style: none;
-    // @extend .content-width;
+  }
+  &__map{
+    position: absolute;
+    right: 220px;
+    width: 400px;
+    height: 250px;
+
   }
 }
 
