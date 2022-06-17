@@ -222,6 +222,28 @@ main {
   }
 }
 
+.contact {
+  text-align: center;
+
+  &_text {
+    resize: none !important;
+    text-align: center;
+    width: 50;
+    height: 50;
+  }
+
+  &_button {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &_title {
+    text-align: center;
+    font-size: 200%;
+    padding: 20px;
+  }
+}
+
 .footer {
   padding: 60px 0;
   @extend .content-width;
@@ -252,47 +274,6 @@ main {
   & .logo {
     font-size: 38px;
     justify-content: center;
-  }
-}
-
-.side {
-  display: none;
-  position: fixed;
-  top: 70%;
-  transform: translateY(-50%);
-  transition: all .3s ease-in;
-
-  & .tween-animate-title {
-    color: $cBlack;
-    text-decoration: none !important;
-    margin: 0 40px;
-    vertical-align: middle;
-    letter-spacing: 2px;
-  }
-
-  &.left {
-    left: -50px;
-
-    &.inview {
-      left: 50px;
-    }
-
-    & .side__inner {
-      transform-origin: top left;
-      transform: rotate(-90deg);
-    }
-  }
-  &.right {
-    right: -50px;
-
-    &.inview {
-      right: 50px;
-    }
-
-    & .side__inner {
-      transform-origin: top right;
-      transform: rotate(90deg);
-    }
   }
 }
 
