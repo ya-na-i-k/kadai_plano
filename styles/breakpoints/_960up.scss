@@ -41,6 +41,19 @@ Stylesheet: 960px以上のモニタで適用
   &__li {
     justify-content: flex-start;
   }
+  &__right {
+    position: absolute;
+    top: auto;
+    right: 60px;
+    list-style: none;
+  }
+  &__map{
+      position: absolute;
+      top :auto;
+      right: 150px;
+      width: 400px;
+      height: 250px;
+  }
 }
 
 .header {
