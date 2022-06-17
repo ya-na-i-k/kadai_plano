@@ -41,6 +41,12 @@ Stylesheet: 960px以上のモニタで適用
   &__li {
     justify-content: flex-start;
   }
+  
+  &__map{
+    height: 300px;
+    width: 300px;
+  }
+
 }
 
 .header {

@@ -1230,6 +1230,7 @@ main {
 }
 
 .contact_button {
+  background-color: white;
   text-align: center;
   padding-top: 30px;
 }
@@ -1269,6 +1270,13 @@ main {
   color: #535353;
 }
 
+.footer__map {
+  right: 200px;
+  position: absolute;
+  height: 400px;
+  width: 380px;
+}
+
 .footer .logo {
   font-size: 38px;
   -webkit-box-pack: center;
@@ -1278,6 +1286,7 @@ main {
 
 .footer__right {
   position: absolute;
+
   right: 60px;
   list-style: none;
 }
@@ -1359,6 +1368,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     margin-left: 0;
     margin-right: 30px;
   }
+
   .footer__map {
     position: absolute;
   }
@@ -1401,6 +1411,10 @@ Stylesheet: 960px以上のモニタで適用
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .footer__map {
+    height: 300px;
+    width: 300px;
   }
   .header__nav {
     display: block;
