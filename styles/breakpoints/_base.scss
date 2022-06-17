@@ -123,6 +123,7 @@ main {
     align-items: center;
     @extend .content-width;
   }
+
 }
 
 .travel {
@@ -303,6 +304,14 @@ main {
   & .logo {
     font-size: 38px;
     justify-content: center;
+  }
+  
+  &__right {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .content-width;
   }
 }
 
