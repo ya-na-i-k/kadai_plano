@@ -39,7 +39,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         margin-left: 0;
         margin-right: 30px;
     }
+    &__right {
+      position: absolute;
+      top: auto;
+      right: 60px;
+      list-style: none;
+    }
     &__map{
         position: absolute;
+        top: 140px;
+        width: 400px;
+        height: 250px;
     }
 }

@@ -3,3 +3,21 @@
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+.footer {
+    & .logo {
+        justify-content: flex-start;
+    }
+
+    &__li {
+        top: 300px;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    &__map{
+        position: absolute;
+        top: 300px;
+        right: 0;
+        width: 400px;
+        height: 250px;
+    }
+}

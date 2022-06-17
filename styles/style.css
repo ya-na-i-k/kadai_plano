@@ -980,7 +980,7 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  font-family: system-ui, 'Segoe UI',Arial, "Meiryo",sans-serif;
 }
 
 img {
@@ -1223,7 +1223,6 @@ main {
 }
 
 .contact_text {
-  resize: none !important;
   text-align: center;
   width: 50;
   height: 50;
@@ -1242,10 +1241,13 @@ main {
 }
 
 .footer {
+  position: relative;
   padding: 60px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .footer__nav {
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1286,14 +1288,13 @@ main {
 
 .footer__right {
   position: absolute;
-
-  right: 60px;
+  right: 20px;
   list-style: none;
 }
 
 .footer__map {
   position: absolute;
-  right: 220px;
+  right: 100px;
   width: 400px;
   height: 250px;
 }
@@ -1323,6 +1324,23 @@ main {
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+  .footer .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__li {
+    top: 300px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .footer__map {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    width: 400px;
+    height: 250px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -1368,9 +1386,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     margin-left: 0;
     margin-right: 30px;
   }
-
+  .footer__right {
+    position: absolute;
+    top: auto;
+    right: 60px;
+    list-style: none;
+  }
   .footer__map {
     position: absolute;
+    top: 140px;
+    width: 400px;
+    height: 250px;
   }
 }
 
@@ -1412,9 +1438,18 @@ Stylesheet: 960px以上のモニタで適用
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .footer__right {
+    position: absolute;
+    top: auto;
+    right: 60px;
+    list-style: none;
+  }
   .footer__map {
-    height: 300px;
-    width: 300px;
+    position: absolute;
+    top: auto;
+    right: 150px;
+    width: 400px;
+    height: 250px;
   }
   .header__nav {
     display: block;
