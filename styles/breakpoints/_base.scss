@@ -215,7 +215,7 @@ main {
   display: flex;
 
   &__img {
-    width: 0.7em;
+    width: 5em;
   }
 
   &__world {
@@ -234,6 +234,7 @@ main {
   }
 
   &_button {
+    background-color: $cWhite;
     text-align: center;
     padding-top: 30px;
   }
@@ -272,17 +273,23 @@ main {
     }
   }
 
+  &__map{
+    right: 200px;
+    position: absolute;
+    height: 400px;
+    width: 380px;
+  }
+
   & .logo {
     font-size: 38px;
     justify-content: center;
   }
   
   &__right {
+    position: absolute;
+    right: 30px;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @extend .content-width;
+    // @extend .content-width;
   }
 }
 
@@ -294,16 +301,5 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  &.twitter{
-    &::before {
-      background-image: url(../images/twitter.svg);
-    }
-  }
-  &.fb{
-    &::before {
-      background-image: url(../images/facebook.svg);
-    }
   }
 }
