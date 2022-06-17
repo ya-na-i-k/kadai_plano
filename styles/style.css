@@ -992,11 +992,11 @@ img {
   font-size: 14px;
 }
 
-.font-md, .popular__title {
+.font-md {
   font-size: 17px;
 }
 
-.font-lr, .houses__title {
+.font-lr {
   font-size: 17px;
 }
 
@@ -1004,15 +1004,15 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .travel__sub, .travel__img, .houses__title, .popular__title {
+.mb-sm, .travel__sub, .travel__img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .travel, .houses, .popular__btn {
+.mb-lg, .travel, .houses {
   margin-bottom: 80px !important;
 }
 
-.pb-sm, .travel__texts, .popular__container {
+.pb-sm, .travel__texts {
   padding-bottom: 16px !important;
 }
 
@@ -1020,7 +1020,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .travel, .houses, .popular__header, .popular__container, .footer {
+.content-width, .header__inner, .travel, .houses, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1036,7 +1036,7 @@ img {
   color: #535353;
 }
 
-.flex, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+.flex, .travel__inner, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1197,64 +1197,35 @@ main {
           transform: translateY(-50%);
 }
 
-.houses__btn {
-  text-align: center;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.popular__inner {
+.houses .company {
   position: relative;
+  -webkit-filter: saturate(50%);
+          filter: saturate(50%);
+  max-width: 1070px;
+  max-height: 500px;
 }
 
-.popular__inner::before {
-  display: block;
-  content: "";
+.houses .com_info {
+  width: 400px;
+  padding: 20px;
   position: absolute;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  background: #eaebe6;
-}
-
-.popular__container {
-  position: relative;
-  z-index: 2;
-}
-
-.popular__btn {
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-45%, 62%);
+          transform: translate(-45%, 62%);
   text-align: center;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
-.popular__img {
-  height: 150px;
-  overflow: hidden;
-  margin-bottom: 5px;
+.houses .com_li {
+  list-style: none;
+  padding: 0;
 }
 
-.popular__img > img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-.logo {
-  font-size: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo__img {
-  width: 0.7em;
-}
-
-.logo__world {
-  color: #904669;
+.houses .info_tilte {
+  text-align: center !important;
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -1382,7 +1353,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+  .flex, .travel__inner, .footer__nav, .footer__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1439,16 +1410,16 @@ Stylesheet: 960px以上のモニタで適用
   .font-sm, .sub-title {
     font-size: 16px;
   }
-  .font-md, .popular__title {
+  .font-md {
     font-size: 19px;
   }
-  .font-lr, .houses__title {
+  .font-lr {
     font-size: 23px;
   }
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .travel, .houses, .popular__btn {
+  .mb-lg, .travel, .houses {
     margin-bottom: 150px !important;
   }
   .pb-lg, .hero {
