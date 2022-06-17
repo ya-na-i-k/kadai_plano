@@ -234,6 +234,7 @@ main {
   }
 
   &_button {
+    background-color: $cWhite;
     text-align: center;
     padding-top: 30px;
   }
@@ -276,6 +277,13 @@ main {
     }
   }
 
+  &__map{
+    right: 200px;
+    position: absolute;
+    height: 400px;
+    width: 380px;
+  }
+
   & .logo {
     font-size: 38px;
     justify-content: center;
@@ -284,6 +292,7 @@ main {
   &__right {
     position: absolute;
     right: 20px;
+
     list-style: none;
   }
   &__map{
@@ -291,6 +300,7 @@ main {
     right: 100px;
     width: 400px;
     height: 250px;
+
   }
 }
 
