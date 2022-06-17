@@ -1042,8 +1042,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .purple {
@@ -1250,7 +1250,8 @@ main {
 }
 
 .logo__img {
-  width: 0.7em;
+  width: 5em;
+  height: auto;
 }
 
 .logo__world {
@@ -1427,6 +1428,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .footer__li {
     margin-left: 0;
     margin-right: 30px;
+  }
+  .footer__right {
+    position: absolute;
+    right: 30px;
+    margin: 0;
+  }
+  .footer__map{
+    position: absolute;
+    right: 200px;
+    margin: 0;
+
   }
 }
 
