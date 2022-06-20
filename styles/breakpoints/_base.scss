@@ -4,12 +4,13 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: system-ui, 'Segoe UI',Arial, "Meiryo",sans-serif;
+  font-family: system-ui, "Segoe UI", Arial, "Meiryo", sans-serif;
 }
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
+
 .font-sm {
   font-size: 14px;
 }
@@ -123,20 +124,17 @@ main {
     align-items: center;
     @extend .content-width;
   }
-
 }
 
 .travel {
   @extend .content-width;
   @extend .mb-lg;
 
-  &__info{
+  &__info {
     position: absolute;
     top: 10px;
     font-size: 200%;
-    left:45%;
-
-
+    left: 45%;
   }
 
   &__inner {
@@ -157,9 +155,7 @@ main {
       $height: 1px,
       $top: 50%,
       $left: -120px
-    ) 
-    
-    
+    );
   }
 
   &__sub {
@@ -229,6 +225,33 @@ main {
   }
 }
 
+.company {
+  position: relative;
+  filter: saturate(50%);
+  max-width: 1070px;
+  max-height: 500px;
+}
+.com_info {
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, 62%);
+  text-align: center;
+}
+
+.com_li {
+  list-style: none;
+  padding: 0;
+}
+.info_tilte {
+  text-align: center !important;
+  margin-bottom: 50px;
+}
+
 .contact {
   text-align: center;
 
@@ -283,7 +306,7 @@ main {
     }
   }
 
-  &__map{
+  &__map {
     right: 200px;
     position: absolute;
     height: 400px;
@@ -294,19 +317,18 @@ main {
     font-size: 38px;
     justify-content: center;
   }
-  
+
   &__right {
     position: absolute;
     right: 20px;
 
     list-style: none;
   }
-  &__map{
+  &__map {
     position: absolute;
     right: 100px;
     width: 400px;
     height: 250px;
-
   }
 }
 

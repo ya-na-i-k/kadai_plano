@@ -317,9 +317,12 @@
 }
 
 .swiper-slide-active .hero__title {
+  color: black;
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
 }
 
 .hero {
@@ -333,14 +336,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, calc(-50% + 20px));
           transform: translate(-50%, calc(-50% + 20px));
-  color: white;
   font-size: 25px;
   z-index: 2;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, transform 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
 }
 
 .hero__footer {
@@ -980,7 +977,7 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: system-ui, 'Segoe UI',Arial, "Meiryo",sans-serif;
+  font-family: system-ui, "Segoe UI", Arial, "Meiryo", sans-serif;
 }
 
 img {
@@ -1219,6 +1216,37 @@ main {
 
 .logo__world {
   color: #904669;
+}
+
+.company {
+  position: relative;
+  -webkit-filter: saturate(50%);
+          filter: saturate(50%);
+  max-width: 1070px;
+  max-height: 500px;
+}
+
+.com_info {
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-45%, 62%);
+          transform: translate(-45%, 62%);
+  text-align: center;
+}
+
+.com_li {
+  list-style: none;
+  padding: 0;
+}
+
+.info_tilte {
+  text-align: center !important;
+  margin-bottom: 50px;
 }
 
 .contact {
