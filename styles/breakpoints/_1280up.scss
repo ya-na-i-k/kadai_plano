@@ -4,10 +4,19 @@ Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
 .travel {
+
+  &__info{
+    position: absolute;
+    top: 10px;
+    font-size: 200%;
+    left:45%;
+  }
+
   &__inner {
     padding: 50px 150px;
   }
 }
+
 .side {
   display: block;
 }
