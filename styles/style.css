@@ -1203,6 +1203,10 @@ main {
       flex-basis: 100%;
 }
 
+.pc {
+  display: none;
+}
+
 .logo {
   font-size: 42px;
   display: -webkit-box;
@@ -1232,8 +1236,8 @@ main {
   position: absolute;
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.6);
-  top: 50%;
-  left: 50%;
+  top: -85%;
+  left: 44%;
   -webkit-transform: translate(-45%, 62%);
           transform: translate(-45%, 62%);
   text-align: center;
@@ -1355,6 +1359,12 @@ main {
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+  .com_info {
+    top: -100px;
+  }
+  .pc {
+    display: none;
+  }
   .footer .logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1411,6 +1421,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     display: -ms-flexbox;
     display: flex;
     padding-top: 100;
+  }
+  .com_info {
+    top: -40px;
+  }
+  .pc {
+    display: none;
   }
   .footer .logo {
     -webkit-box-pack: start;
@@ -1473,6 +1489,13 @@ Stylesheet: 960px以上のモニタで適用
   }
   .travel__title::before {
     display: block;
+  }
+  .com_info {
+    top: -150px;
+    padding-bottom: 30px;
+  }
+  .pc {
+    display: inline;
   }
   .footer__li {
     -webkit-box-pack: start;
