@@ -317,9 +317,12 @@
 }
 
 .swiper-slide-active .hero__title {
+  color: black;
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
 }
 
 .hero {
@@ -333,14 +336,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, calc(-50% + 20px));
           transform: translate(-50%, calc(-50% + 20px));
-  color: white;
   font-size: 25px;
   z-index: 2;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
-  transition: opacity 0.3s ease 1s, transform 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
 }
 
 .hero__footer {
