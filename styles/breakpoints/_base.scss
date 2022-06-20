@@ -211,7 +211,9 @@ main {
     flex-basis: 100%;
   }
 }
-
+.pc{
+  display: none;
+}
 .logo {
   font-size: 42px;
   display: flex;
@@ -237,8 +239,8 @@ main {
   position: absolute;
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.6);
-  top: 50%;
-  left: 50%;
+  top: -85%;
+  left: 44%;
   transform: translate(-45%, 62%);
   text-align: center;
 }

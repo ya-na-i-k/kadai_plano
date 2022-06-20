@@ -23,12 +23,11 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 .travel {
-
-  &__info{
+  &__info {
     position: absolute;
     top: 10px;
     font-size: 200%;
-    left:45%;
+    left: 45%;
   }
 
   &__img {
@@ -44,7 +43,13 @@ Stylesheet: 960px以上のモニタで適用
     }
   }
 }
-
+.com_info {
+  top: -150px;
+  padding-bottom: 30px;
+}
+.pc{
+  display: inline;
+}
 .footer {
   &__li {
     justify-content: flex-start;
@@ -55,14 +60,13 @@ Stylesheet: 960px以上のモニタで適用
     right: 60px;
     list-style: none;
   }
-  &__map{
-      position: absolute;
-      top :auto;
-      right: 150px;
-      width: 400px;
-      height: 250px;
+  &__map {
+    position: absolute;
+    top: auto;
+    right: 150px;
+    width: 400px;
+    height: 250px;
   }
-
 }
 
 .header {
@@ -72,9 +76,9 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 .mobile-menu {
-    &__btn {
-        display: none;
-    }
+  &__btn {
+    display: none;
+  }
 }
 
 .swiper-slide {

@@ -3,6 +3,13 @@
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+
+.com_info {
+    top: -100px;
+  }
+.pc{
+  display: none;
+}
 .footer {
     & .logo {
         justify-content: flex-start;
