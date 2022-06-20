@@ -130,6 +130,15 @@ main {
   @extend .content-width;
   @extend .mb-lg;
 
+  &__info{
+    position: absolute;
+    top: 10px;
+    font-size: 200%;
+    left:45%;
+
+
+  }
+
   &__inner {
     @extend .flex;
     justify-content: space-between;
@@ -148,13 +157,8 @@ main {
       $height: 1px,
       $top: 50%,
       $left: -120px
-    ) {
-      background-color: $cBlack;
-      transform: translateY(-50%) scaleX(0);
-      transition: transform 0.3s ease 1.6s;
-      transform-origin: right;
-    }
-
+    ) 
+    
     
   }
 
@@ -165,6 +169,7 @@ main {
   &__img {
     height: 300px;
     @extend .mb-sm;
+    margin-top: 50px;
     transition: box-shadow 1ms linear 0.8s;
 
     & > img {
@@ -182,6 +187,7 @@ main {
 
   &__texts {
     @extend .pb-sm;
+    margin-top: 50px;
 
     &.inview {
       & .travel__title::before {
