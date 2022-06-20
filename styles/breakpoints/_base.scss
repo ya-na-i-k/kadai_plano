@@ -47,7 +47,7 @@ img {
   display: block;
 }
 .sub-title {
-  @extend .font-sm;
+  @extend .font-lr;
   color: $cSubTitle;
 }
 .flex {
@@ -80,7 +80,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: $navHeight;
+  height: $headHeight;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -240,7 +240,8 @@ main {
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.6);
   top: -85%;
-  left: 44%;
+  left: 50%;
+  right: 50%;
   transform: translate(-45%, 62%);
   text-align: center;
 }
@@ -248,6 +249,7 @@ main {
 .com_li {
   list-style: none;
   padding: 0;
+  vertical-align: middle;
 }
 .info_tilte {
   text-align: center !important;
@@ -309,7 +311,7 @@ main {
   }
 
   &__map {
-    right: 200px;
+    right: 300px;
     position: absolute;
     height: 400px;
     width: 380px;
@@ -332,6 +334,9 @@ main {
     width: 400px;
     height: 250px;
   }
+}
+.contactbtn{
+  padding: 10px;
 }
 
 .icon {

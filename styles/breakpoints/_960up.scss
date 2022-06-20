@@ -27,7 +27,7 @@ Stylesheet: 960px以上のモニタで適用
     position: absolute;
     top: 10px;
     font-size: 200%;
-    left: 45%;
+    left: 50%;
   }
 
   &__img {
@@ -46,6 +46,8 @@ Stylesheet: 960px以上のモニタで適用
 .com_info {
   top: -150px;
   padding-bottom: 30px;
+  left: 50%;
+  right: 50%;
 }
 .pc{
   display: inline;
@@ -63,7 +65,7 @@ Stylesheet: 960px以上のモニタで適用
   &__map {
     position: absolute;
     top: auto;
-    right: 150px;
+    right: 200px;
     width: 400px;
     height: 250px;
   }
